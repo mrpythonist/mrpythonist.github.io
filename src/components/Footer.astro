@@ -1,0 +1,196 @@
+---
+import { siteConfig } from "../config";
+
+const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+---
+
+<footer class="relative bg-gray-50 border-t border-gray-200">
+  <div class="mx-auto max-w-6xl px-6 py-12 lg:px-8">
+    <div
+      class="flex flex-col md:flex-row md:items-center md:justify-between gap-8"
+    >
+      <div class="flex flex-col gap-4">
+        <h3 class="text-2xl font-bold text-gray-800">
+          {siteConfig.name}
+        </h3>
+        <p class="text-base text-gray-600">
+          {siteConfig.title}
+        </p>
+        <div class="flex gap-x-6">
+          <a
+            href={`mailto:${siteConfig.social.email}`}
+            aria-label="Email"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            style={`--accent-color: ${siteConfig.accentColor}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+              ></path>
+              <path d="M3 7l9 6l9 -6"></path>
+            </svg>
+          </a>
+          <a
+            href={siteConfig.social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            style={`--accent-color: ${siteConfig.accentColor}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M8 11v5"></path><path d="M8 8v.01"></path><path d="M12 16v-5"
+              ></path><path d="M16 16v-3a2 2 0 1 0 -4 0"></path><path
+                d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+              ></path></svg
+            >
+          </a>
+
+          <a
+            href={siteConfig.social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            style={`--accent-color: ${siteConfig.accentColor}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              ></path></svg
+            >
+          </a>
+          <a
+            href={siteConfig.social.upwork}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Upwork"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            style={`--accent-color: ${siteConfig.accentColor}`}
+          >
+            <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 32 32"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="h-6 w-6"
+>
+  <path stroke="none" d="M0 0h32v32H0z" fill="none" />
+  <path d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z" />
+</svg>
+
+          </a>
+        </div>
+      </div>
+
+      <div class="hidden md:block flex flex-col md:items-end gap-4">
+        <nav class="flex gap-x-8">
+          <a
+            href="#about"
+            class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+            >About</a
+          >
+          {
+            hasProjects && (
+              <a
+                href="#projects"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Projects
+              </a>
+            )
+          }
+          {
+            hasExperience && (
+              <a
+                href="#experience"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Experience
+              </a>
+            )
+          }
+          {
+            hasEducation && (
+              <a
+                href="#education"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Education
+              </a>
+            )
+          }
+        </nav>
+        <p class="text-sm text-gray-500">
+          © {new Date().getFullYear()}
+          {siteConfig.name}. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative pattern -->
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <svg
+      aria-hidden="true"
+      class="absolute bottom-0 left-0 w-full h-24 text-gray-100"
+    >
+      <pattern
+        id="footer-pattern"
+        x="0"
+        y="0"
+        width="100"
+        height="100"
+        patternUnits="userSpaceOnUse"
+      >
+        <path
+          d="M0 50 Q 25 40, 50 50 T 100 50"
+          stroke="currentColor"
+          stroke-width="0.5"
+          fill="none"
+          opacity="0.4"></path>
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#footer-pattern)"></rect>
+    </svg>
+  </div>
+</footer>
