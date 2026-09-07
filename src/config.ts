@@ -31,6 +31,12 @@ export const siteConfig = {
 ],
   projects: [
     {
+      name: "Food Delivery System — Full-Stack Platform",
+      description: "Designed and developed a full-stack single-vendor food delivery platform consisting of a React/Vite admin dashboard, Laravel REST API, and Expo/React Native customer application.",
+      link: "https://github.com/mrpythonist/food-delivery-admin",
+      skills: ["Laravel", "React.js", "Next.js", "React Native", "REST APIs", "PostgreSQL", "Docker", "Redis"],
+    },
+    {
       name: "Debt Solution America",
       description:
         "A landing page website for a debt consolidation company that is responsive for every device made in NextJS, NodeJS and ExpressJS.",
