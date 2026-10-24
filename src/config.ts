@@ -62,7 +62,7 @@ export const siteConfig = {
     {
       company: "TurboDebt",
       title: "Software Engineer",
-      dateRange: "Mar 2023 - Present",
+      dateRange: "Mar 2023 - Oct 2026",
       bullets: [
         "Building/maintaining the Laravel/PHP system that processes leads from media partners.",
         "Ensuring stability, troubleshooting issues, and optimizing backend/frontend performance.",
@@ -70,18 +70,6 @@ export const siteConfig = {
         "Upgrading features and scalability to support company growth.",
         "Collaborated with product team to define technical requirements",
         "End-to-end development—from backend APIs to frontend dashboards.",
-      ],
-    },
-    {
-      company: "Upwork Inc.",
-      title: "Full Stack Developer",
-      dateRange: "Jan 2021 - Present",
-      bullets: [
-        "Build scalable solutions from backend (Laravel/Node.js) to frontend (React/Next.js), ensuring seamless performance",
-        "Develop intuitive admin panels with Tailwind/Bootstrap for actionable insights.",
-        "Create secure RESTful APIs for third-party integrations",
-        "Single-handedly manage both backend logic and frontend UX, saving time/cost.",
-        "Regular updates, no tech jargon, and deadline-driven results.",
       ],
     },
   ],
